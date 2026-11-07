@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ar" xml:lang="ar" dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>السيارات</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="myFunctions.js"></script>
+</head>
+<body>
+<div id="header"><h1>السيارات</h1><p>اختر سيارة أو أكثر ثم اضغط متابعة</p></div>
+<div id="nav"><a href="home.html">الرئيسية</a><a href="AboutUs.html">من نحن</a><a class="active" href="Cars.html">السيارات</a></div>
+<div id="content">
+<div class="box">
+<table>
+<tr><th>الرمز</th><th>الموديل</th><th>سنة الصنع</th><th>السعر اليومي</th><th>إظهار التفاصيل</th><th>اختيار</th></tr>
+<tr><td>CR-001</td><td><img src="images/car1.jpg" alt="Toyota Corolla" />Toyota Corolla</td><td>2023</td><td>250000 ل.س</td><td><input type="checkbox" class="show" /></td><td><input type="checkbox" class="sel" /></td></tr>
+<tr class="details"><td colspan="6"><div class="info"><span>الوقود: بنزين</span><span>ناقل الحركة: أوتوماتيك</span><span>المقاعد: 5</span><span>العداد: 30000 كم</span><span>اللون: أبيض</span></div></td></tr>
+<tr><td>CR-002</td><td><img src="images/car2.jpg" alt="Kia Sportage" />Kia Sportage</td><td>2022</td><td>400000 ل.س</td><td><input type="checkbox" class="show" /></td><td><input type="checkbox" class="sel" /></td></tr>
+<tr class="details"><td colspan="6"><div class="info"><span>الوقود: ديزل</span><span>ناقل الحركة: أوتوماتيك</span><span>المقاعد: 5</span><span>العداد: 45000 كم</span><span>اللون: رمادي</span></div></td></tr>
+<tr><td>CR-003</td><td><img src="images/car3.jpg" alt="Hyundai Elantra" />Hyundai Elantra</td><td>2024</td><td>300000 ل.س</td><td><input type="checkbox" class="show" /></td><td><input type="checkbox" class="sel" /></td></tr>
+<tr class="details"><td colspan="6"><div class="info"><span>الوقود: بنزين</span><span>ناقل الحركة: أوتوماتيك</span><span>المقاعد: 5</span><span>العداد: 15000 كم</span><span>اللون: أزرق</span></div></td></tr>
+<tr><td>CR-004</td><td><img src="images/car4.jpg" alt="Chevrolet Spark" />Chevrolet Spark</td><td>2021</td><td>180000 ل.س</td><td><input type="checkbox" class="show" /></td><td><input type="checkbox" class="sel" /></td></tr>
+<tr class="details"><td colspan="6"><div class="info"><span>الوقود: بنزين</span><span>ناقل الحركة: عادي</span><span>المقاعد: 4</span><span>العداد: 60000 كم</span><span>اللون: مرجاني</span></div></td></tr>
+<tr><td>CR-005</td><td><img src="images/car5.jpg" alt="Nissan Sunny" />Nissan Sunny</td><td>2020</td><td>220000 ل.س</td><td><input type="checkbox" class="show" /></td><td><input type="checkbox" class="sel" /></td></tr>
+<tr class="details"><td colspan="6"><div class="info"><span>الوقود: بنزين</span><span>ناقل الحركة: عادي</span><span>المقاعد: 5</span><span>العداد: 80000 كم</span><span>اللون: أحمر</span></div></td></tr>
+</table>
+<p><input type="button" id="next" value="متابعة" /><span id="carMsg">اختر سيارة واحدة على الأقل</span></p>
+</div>
+<form id="booking" action="#">
+<fieldset>
+<legend>نموذج الحجز</legend>
+<p><label for="name">الاسم الكامل:</label><input type="text" id="name" /></p>
+<p><label for="nid">الرقم الوطني *:</label><input type="text" id="nid" maxlength="11" /></p>
+<p><label for="start">تاريخ البداية *:</label><input type="text" id="start" title="yyyy-mm-dd" /></p>
+<p><label for="end">تاريخ النهاية *:</label><input type="text" id="end" title="yyyy-mm-dd" /></p>
+<p><label for="phone">رقم الموبايل:</label><input type="text" id="phone" /></p>
+<p><label for="email">البريد الإلكتروني:</label><input type="text" id="email" /></p>
+<p><input type="submit" value="إرسال" /></p>
+<div id="result"></div>
+</fieldset>
+</form>
+</div>
+<div id="footer"><p>مصادر الصور من Wikimedia Commons بعد القص والتصغير:
+<a href="https://commons.wikimedia.org/wiki/File:2023_Toyota_Corolla_2.0_XEi_(Brazil).jpg">Toyota Corolla</a> (Just a Man, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)،
+<a href="https://commons.wikimedia.org/wiki/File:Kia_Sportage_(NQ5)_1X7A0326_(edited).jpg">Kia Sportage</a> (Alexander Migl)،
+<a href="https://commons.wikimedia.org/wiki/File:2024_Hyundai_Elantra_SEL,_front_right,_07-25-2026.jpg">Hyundai Elantra</a> (BuickRiviera99)،
+<a href="https://commons.wikimedia.org/wiki/File:00_CHEVROLET_SPARK_1.jpg">Chevrolet Spark</a> (Benespit)،
+<a href="https://commons.wikimedia.org/wiki/File:2020_Nissan_Versa_SR_front_NYIAS_2019.jpg">Nissan Versa، الجيل نفسه من Sunny</a> (Kevauto)،
+والأربع الأخيرة بترخيص <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p></div>
+</body>
+</html>
